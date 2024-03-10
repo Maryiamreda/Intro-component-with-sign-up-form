@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(./bg-intro-desktop.png);
+    background-size: cover;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    grid-template-columns: repeat(2, 1fr);
+
+
+}
+
+.container {}
+
+.left,
+.right {
+    width: fit-content;
+}
+
+.left {
+    color: aliceblue;
+    margin-left: 250px;
+    padding: 117px 0 117px 0;
+}
+
+
+
+p {
+    font-size: small;
+}
+
+.right {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 18px;
+}
+
+.freetrial,
+.form {
+    width: 390px;
+    box-shadow: 0 5px #1a010133;
+}
+
+.freetrial {
+    background-color: hsl(248, 32%, 49%);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 11px;
+    border-radius: 12px;
+}
+
+.form {
+    background-color: white;
+    padding: 18px;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-left: 100px; */
+}
+
+
+
+.input-items {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+input {
+
+    width: 315px;
+    padding: 10px;
+    margin: 10px;
+    border: 0.5px solid #8080807a;
+    border-radius: 7px;
+}
+
+input:hover {
+    border: 0.5px solid #808080;
+}
+
+
+button {
+    width: 331px;
+    height: 48px;
+    background-color: hsl(154, 59%, 51%);
+    border: transparent;
+    box-shadow: 0 5px #1a010133;
+    margin-top: 10px;
+    border-radius: 7px;
+    color: white;
+    text-align: center;
+}
+
+button:hover {
+    background-color: hsl(154deg 59% 51% / 72%);
+    ;
+}
+
+.form div {
+    color: #808080a1;
+    font-size: 8px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.s {
+    color: red;
+}
+
+.error {
+    border: 0.5px solid red;
+    background: url('./icon-error.svg') no-repeat;
+    background-position: 95% 50%;
+}
+
+.error-text {
+    color: red;
+    font-size: 8px;
+    margin-left: 207px;
+    margin-top: -15px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
